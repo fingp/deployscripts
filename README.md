@@ -29,7 +29,7 @@
 작성시간 create_date (date) or (string)<br>
 조회수 hit (int)
 
-### <과제/인강 정보 모두 가져오기> /getAllWorks Post
+### <과제/인강 정보 모두 가져오기> POST방식 /getAllWorks 
 
 #### 입력 <br>
 학번      id (string)<br>
