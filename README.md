@@ -38,7 +38,7 @@
 
 
 ### 
-과제종류(0=과제 1=인강) workType int 
+과제종류(0=과제 1=인강 2=강의자료) workType int 
 
 과제코드 workCode string
 
@@ -46,8 +46,10 @@
 
 과제제목 workTitle string
 
-과제생성시간(yyyy-MM-dd hh:mm:ss) workCreateTime string
+*과제생성시간(yyyy-MM-dd hh:mm:ss) workCreateTime string
+*과제종료시간(yyyy-MM-dd hh:mm:ss) workFinishTime string
+ 이거 그냥 기간 workTime string 으로 보낼게 기간없음이 너무 많아
 
-과제종료시간(yyyy-MM-dd hh:mm:ss) workFinishTime string
+제출여부(0=미제출 1=제출)(사이버강의는 수강시간이 권장시간 넘었을때 제출로 판정)(강의자료도 1로 보냄) isSubmit int
 
-제출여부(0=미제출 1=제출)(사이버강의는 수강시간이 권장시간 넘었을때 제출로 판정) isSubmit int
+강의파일 (강의 파일명 + "[]" + 링크) workFile string 
