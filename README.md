@@ -55,7 +55,14 @@ form-data
 댓글 내용 content (string)<br>
 작성자 author_id (string)<br>
 
+### <게시글작성> post_add
 
+#### 입력 <br>
+form-data
+강의코드 class_code (string)<br>
+게시글 제목 title (string)<br>
+게시글 내용 content (string)<br>
+작성자 author_id (string)<br>
 
 ### <과제/인강 정보 모두 가져오기> POST방식 /get_ass
 
