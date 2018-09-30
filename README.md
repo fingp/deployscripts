@@ -23,21 +23,37 @@
 #### 입력 <br>
 강의코드 class_code (string)<br>
 #### 출력<br>
-게시글 id (프라이머리키) post_id<br>
+게시글 post_id (프라이머리키) post_id<br>
+게시물 제목 title (string)<br>
+게시물 내용 content (string)<br>
+작성자 author_id (string)<br>
+작성시간 create_date (date) or (string)<br>
+조회수 hit (int)
+### <게시글 개별> /post_detail/<pk>(게시글 id 가 pk)
+본문내용 + 댓글 내용 댓글쓰기창까지
+ 
+#### 입력 <br>
+게시글 post_id id (string)<br>
+#### 출력<br>
+글 타입 type (string) <br> (0 이면 게시글 본문 1이면 그에 대한 댓글)
+게시글 post_id (프라이머리키) post_id<br>
 게시물 제목 title (string)<br>
 게시물 내용 content (string)<br>
 작성자 author_id (string)<br>
 작성시간 create_date (date) or (string)<br>
 조회수 hit (int)
 
+댓글 내용 content(string)<br>
+댓글 작성시간 create_date (date) or (string)<br>
+댓글 작성자 author_id (string)<br>
+
 ### <댓글작성> post_detail/(?P<pk>\d+)/comment/new/
 
 #### 입력 <br>
-
+form-data
 강의코드 class_code (string)<br>
 댓글 내용 content (string)<br>
 작성자 author_id (string)<br>
-작성시간 create_date (date) or (string)<br>
 
 
 
